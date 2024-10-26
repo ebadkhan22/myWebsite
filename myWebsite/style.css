@@ -1,0 +1,160 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Body Styles */
+  body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.8;
+    color: #F5F5F5; /* Light gray text for readability on dark background */
+    background: #1C1C1E; /* Deep dark gray for body background */
+  }
+  
+  /* Header */
+  header {
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5em 2em;
+    background: #D71920; /* Aberdeen red */
+    color: #FFFFFF;
+  }
+  
+  .logo {
+    font-size: 1.8em;
+    font-weight: bold;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    display: flex;
+    gap: 1.5em;
+  }
+  
+  nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+  }
+  
+  /* Hero Section */
+  #hero {
+    background: linear-gradient(45deg, #D71920, #2E2E30); /* Red to dark gray gradient */
+    color: #F5F5F5;
+    text-align: center;
+    padding: 4em 2em;
+  }
+  
+  #hero h1 {
+    font-size: 2.5em;
+    animation: fadeIn 2s ease-in;
+  }
+  
+  .cta-button {
+    background: #F5F5F5; /* Light gray for contrast */
+    color: #1C1C1E; /* Dark text for button */
+    padding: 0.8em 1.5em;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 1em;
+    display: inline-block;
+    transition: transform 0.3s;
+  }
+  
+  .cta-button:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Offset Section */
+  .offset-section {
+    background: #2E2E30; /* Dark gray for contrast */
+    padding: 2em 1em;
+    transform: translateY(-20px);
+    border-left: 5px solid #D71920; /* Red accent */
+  }
+  
+  /* Services Section */
+  .service-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1em;
+    padding: 2em;
+    background: #1C1C1E; /* Dark background */
+  }
+  
+  .service-item {
+    background: #2E2E30; /* Dark gray for service item */
+    padding: 1.5em;
+    border-radius: 8px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s;
+  }
+  
+  .service-item:hover {
+    transform: translateY(-5px);
+  }
+  
+  /* Tilted Portfolio Section */
+  .tilted-section {
+    background: #2E2E30; /* Dark gray */
+    padding: 3em 2em;
+    transform: rotate(-2deg);
+  }
+  
+  .portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1.5em;
+  }
+  
+  .portfolio-item {
+    background: #1C1C1E; /* Darker background for portfolio items */
+    padding: 2em;
+    transform: rotate(2deg);
+    transition: transform 0.3s;
+    border: 2px solid #D71920; /* Red border for portfolio items */
+  }
+  
+  .portfolio-item:hover {
+    transform: rotate(0deg);
+  }
+  
+  /* Footer */
+  footer {
+    background: #D71920; /* Aberdeen red */
+    color: #FFFFFF;
+    text-align: center;
+    padding: 1em 0;
+  }
+  
+  /* Animations */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    nav ul {
+      flex-direction: column;
+      gap: 0.5em;
+    }
+  
+    #hero h1 {
+      font-size: 2em;
+    }
+  
+    .service-grid {
+      grid-template-columns: 1fr;
+    }
+  
+    .portfolio-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+  
